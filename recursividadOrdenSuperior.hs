@@ -1,3 +1,5 @@
+-- CLASE 5
+
 factorial :: Integer -> Integer
 factorial 0 = 1
 factorial n = n * factorial(n-1)
@@ -58,3 +60,11 @@ maximaFlor f ( flor:flores )
 -- ghci> maximaFlorSegun cantidadDeDemanda flores
 -- "Rosa"
 -- }
+
+-- CLASE 6 -> 12/5
+
+-- 1b)
+
+ordenadas :: [ Flor ] -> Bool
+ordenadas[_] = True
+ordenadas ( unaFlor:otraFlor:flores ) = cantidadDeDemanda unaFlor > cantidadDeDemanda otraFlor && ordenadas ( otraFlor:flores )
